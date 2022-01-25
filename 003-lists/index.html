@@ -1,0 +1,38 @@
+<!DOCTYPE html></!DOCTYPE html>
+<html>
+<head>
+	<title>LISTS</title>
+</head>
+<body>
+	<div id="root">
+		<ul>
+			<li v-for="(name ,index) in names "> {{name}}</li>
+		</ul>
+		<input type="text" id="input">
+		<button id="button">Add Name</button>
+	</div>
+<!--	//vue cdn-->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script type="text/javascript">
+		
+		var app = new Vue({
+			el: '#root',
+			// array
+			data: {
+				names: ['Ram', 'Kans', 'Selva']
+			},
+			//when component is mounted
+			mounted() {
+				document.getElementById('button').addEventListener('click', function() {
+					var newname = document.getElementById('input')
+					//add to array
+					app.names.push(newname.value)
+					//reset the input field after adding to array
+					newname.value = ''
+				})
+			}
+
+		})
+	</script>
+</body>
+</html>

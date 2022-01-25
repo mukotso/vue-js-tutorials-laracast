@@ -1,0 +1,31 @@
+<!DOCTYPE html></!DOCTYPE html>
+<html>
+<head>
+	<title>NAMED SLOTS IN A NUTSHELL</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>
+<body>
+	<div id="root">
+		<modal>
+			<template slot="title"> Modal Header</template>
+			<p slot="content">
+				The modal structure is very simple:
+				modal: the main container
+				modal-background: a transparent overlay that can act as a click target to close the modal
+				modal-content: a horizontally and vertically centered container, with a maximum width of 640px, in which you can include any content
+				modal-close: a simple cross located in the top right corner
+
+			</p>
+
+		</modal>
+
+	</div>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html></!DOCTYPE html>
+<html>
+<head>
+	<title>INLINE TEMPLATES</title>
+</head>
+<body>
+	<div id="root">
+		<progress-view inline-template>
+			<div>
+				<p>Your progress through this course is {{completionRate}}</p>
+				<button @click="completionRate = completionRate + 10">Improved Course Learning</button>
+			</div>
+		</progress-view>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

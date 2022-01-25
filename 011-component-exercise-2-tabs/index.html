@@ -1,0 +1,25 @@
+<!DOCTYPE html></!DOCTYPE html>
+<html>
+<head>
+	<title>COMPONENT EXERCISE 3 TAB</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+
+</head>
+<body>
+	<div id="root">
+		<tabs>
+			<tab name="Services">
+				<p>Content of services tab</p>
+			</tab>
+			<tab name="Home" :selected="true">
+				<p>Content of home tab</p>
+			</tab>
+			<tab name="Products">
+				<p>Content of products tab</p>
+			</tab>
+		</tabs>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script type="text/javascript" src="main.js"></script>	
+</body>
+</html>
